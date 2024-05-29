@@ -1,0 +1,13 @@
+asgiref==3.6.0
+Django==3.2
+django-ckeditor==6.5.1
+django-crispy-forms==1.14.0
+django-icons==22.1
+django-js-asset==2.0.0
+django-libs==2.0.3
+django-phone-field==1.8.1
+django-social-media-links==0.2
+Pillow==9.4.0
+pytz==2022.7
+sqlparse==0.4.3
+tzdata==2023.3
