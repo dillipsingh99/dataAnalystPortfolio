@@ -1,0 +1,618 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+        
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="{% url 'index' %}"><img src="{% static 'images/dkfix.png' %}" alt="alternative"></a>  
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+            
+                <li class="nav-item logo-image">
+                    <a class="btn btn-outline-danger text-white mr-1" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-danger text-white mr-1" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-danger text-white mr-1" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-danger text-white mr-1" href="#workwith">workWith</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-danger text-white mr-1" href="#tools">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-danger text-white mr-1" href="#contact">Contact</a>
+                </li>    
+            </ul>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+
+<!-- Header -->
+<header id="header" class="header">
+    <div class="container">    
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="text-container">
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com/in/dillip-singh-240b21190/" class="fa fa-linkedin fa-fw"></a><tab>
+                        <a href="https://www.facebook.com/profile.php?id=100075997592335" class="fa fa-facebook"></a><tab>
+                        <a href="https://www.facebook.com/profile.php?id=100075997592335" class="fa fa-google"></a><tab>
+                        <a href="https://github.com/dillipsingh99" class="fa fa-github"></a>
+                    </div>
+                    <h1 class="h1-large" style="color:rgb(4, 65, 26);">DATA ANALYST</h1>
+                    <h1 class="h1-large" style="color:rgb(4, 65, 26);">Love to work with Big Data</h1>
+                    <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
+                    <a class="btn-solid-lg page-scroll" href="#contact">Contact Me</a>
+                    {% comment %} <a class="btn-outline-lg page-scroll" href="#contact"><i class="fa fa-map-marker"></i> Contact Me</a> {% endcomment %}
+                </div> <!-- end of text-container -->
+                
+            </div> <!-- end of col -->
+            
+            
+        </div> <!-- end of row -->
+        
+        
+    </div> <!-- end of container -->
+    
+</header> <!-- end of header -->
+<!-- end of header -->
+<div id="tools" class="basic-2">
+    <div class="container text-center">
+        <h1>"Tools and Technology I used for Data Analysis"</h1>
+        <div class="row align-items-end">
+            <div class="col">
+                <img src="{% static 'images/bgimages/powerBI.jpg' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">"
+                    <h5 class="card-title text-info"><span style="background-color:white;">POWER BI DASHBOARD</span></h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static 'images/bgimages/excelDas.PNG' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">EXCEL DASHBOARD</span></h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static 'images/bgimages/pythonDAB.jpeg' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">PYTHON</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-end mt-5">
+            <div class="col">
+                <img src="{% static 'images/bgimages/SQLDAn.jpg' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">STRUCTURE QUERY LANGUAGE</span></h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static 'images/bgimages/DBMS.jpg' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">DATABASE</span></h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static 'images/bgimages/RDBMS.webp' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">RELATIONAL DATABASE</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-end mt-5">
+            <div class="col">
+                <img src="{% static 'images/bgimages/Dataware.png' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">DATAWARE HOUSE</span></h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static 'images/bgimages/Machinelearning.jpg' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">MACHINE LEARNING</span></h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static 'images/bgimages/NaturalLP.jpg' %}"  class="rounded" alt="Mountains" width="300" height="200">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-info"><span style="background-color:white;">NPL</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="workwith" class="basic-2">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="text-container">
+                <h2 class="h2-heading">Worked with top Organization listed in Nepal</h2>
+                <div class="image-container">
+                    <a href="https://channels.readthedocs.io/en/stable/">
+                    <img class="img-fluid" style="width:1000px" src="{% static 'images/workedwith.png' %}" alt="alternative">
+                    </a>
+                </div> <!-- end of image-container -->
+            </div> <!-- end of text-container -->
+        </div>
+    </div>
+    <div class="split">
+        <div class="area-1">
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                        
+                        <!-- Text Container -->
+                        <div class="text-container">
+                            <h2>Why Work With Me</h2>
+                            <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well.</p>
+                            
+                            <p>In my work experience in the field of data analytics, I have extensively utilized a range of tools and technologies 
+                                to derive actionable insights from complex datasets. My proficiency in Python, coupled with libraries like
+                                 Matplotlib and Seaborn, has enabled me to create sophisticated visualizations that highlight key trends 
+                                 and patterns. I have leveraged Pandas and NumPy for efficient data manipulation and analysis, ensuring 
+                                 that data is clean, organized, and ready for in-depth examination. My expertise in SQL has been crucial 
+                                 for querying and managing relational databases, facilitating seamless data extraction and transformation 
+                                 processes. Additionally, I have employed Excel for quick data reviews and pivot table analyses, 
+                                 while Power BI has been instrumental in developing dynamic, interactive dashboards that provide 
+                                 stakeholders with real-time, data-driven decision support. This comprehensive skill set has empowered 
+                                 me to deliver impactful analytics solutions across various projects and industries.</p>
+                        </div> <!-- end of text-container -->
+                        <!-- end of text container -->
+    
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of area-2 -->
+    </div> <!-- end of split -->
+    <!-- end of details -->
+    
+
+
+</div>
+
+
+<!-- About-->
+<div id="about" class="basic-1 bg-gray">
+    <div class="container">
+        <h2 class="h2-heading"><strong>Acedmic Qualification and Tranning</strong></h2>
+
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="text-container first">
+                    <h2>Hi there I'm Dillip Singh,</h2>
+                    <p>In my tenure as a Data Analytics, I've specialized in the end-to-end management of data, 
+                        from meticulous collection to advanced processing using the latest technology. Analyzing this data,
+                        I've uncovered valuable trends and patterns, contributing to informed decision-making and strategic 
+                        insights for the organizations I've served.</p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Qualification & Education</h3>
+                <div class="text-container second">
+
+                    <a href="https://www.euclea-business-school.com"><h6 style="color:blue;">Euclea Business School, France</h6></a>
+                    <a href="https://brittsimperial.com/"><h6 style="color:blue;">Britts Imperial University College, Sharjah, UAE</h6></a>
+                    <div class="time">Oct 2023</div>
+                    <p>Master in Data Analytics and AI</p>
+                    <a href="https://www.kuk.ac.in/"><h6 style="color:blue;">Kurukshetra University, India</h6></a>
+                    <a href="http://karnalinstitutes.ac.in/"><h6 style="color:blue;">Karnal Institute Of Technology and Management, Karnal, India.</h6></a>
+                    <div class="time">2015 to 2020 Dec</div>
+                    <p>Bachelor In Computer Science Engineering</p>
+                    <a href="https://www.neb.gov.np/"><h6 style="color:blue;">Higher Secondary English Board(HSEB)</h6></a>
+                    <a href="https://www.canvascollege.edu.np/"><h6 style="color:blue;">Canvas International College,Kathmandu,Nepal</h6></a>
+                    <div class="time">2012 to 2014</div>
+                    <p>Higher Eduaction</p>
+                    <a href="https://see.gov.np/"><h6 style="color:blue;">School Leaving Certificate Board(SLC)</h6></a>
+                    <a href="https://monastic.edu.np/"><h6 style="color:blue;">Monastic Higher Secondary English Boarding School, Janakpur, Nepal</h6></a>
+                    <div class="time">2001 to 2011</div>
+                    <p>High school</p>
+        
+                    
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Working and Tranning skills</h3>
+                <div class="text-container third">
+                    <h4>Dec 2023 </h4>
+                    <h4><a href="https://www.reyadah.ae/"><h6 style="color:blue;">Al Reyadah Hospitality Services Pvt. Ltd. UAE</h6></a></h4>
+                    <h6>HR Assistant (Internship)</h6>
+                    <p><strong>Role :- </strong>Employee Records Management, Recruitment Support, Onboarding Support, Employee Record Management, 
+                        Payroll Assistance, Tanning and Development, HR Policies and Procedure, HR Reporting, Employee Relations
+                    </p>
+                    <h4>2020 to 2023 </h4>
+                    <h4><a href="https://ekghanti.com.np/"><h6 style="color:blue;">Ekghanti services pvt. ltd., Kathmandu</h6></a></h4>
+                    <h6>Data Analyst</h6>
+                    <p><strong>Role :- </strong>Worked as a Data Analyst to Collect required data from database, 
+                        Entry new data to database(ERP System), Cleaning and Processing data, Analysis data, Report Generation, 
+                        Data Modeling, Monitoring Performance and provide exact information using these data to head for better decision making. 
+                        Some of the tools and technology I have used are Excel, Sql, Python, Powerpoint, Word, PowerBI, Google Analytics etc.  
+                    </p>
+                    <h4>2019-09-00 to 2019-10-31</h4>
+                    <h6 style="color:blue;">JP Tins pvt. ltd, Karnal</h6>
+                    <h6>Data Analyst(Internship)</h6>
+                    <h4>2019-05-00 to 2019-08-00</h4>
+                    <h6 style="color:blue;">Daily mails,Noida</h6>
+                    <h6>Data Entry and Analyst(Internship)</h6>
+                    <h4>2018-06-00 to 2018-08-00</h4>
+                    <h6 style="color:blue;">Unique Instrumrnt and Control, Noida</h6>
+                    <H6>Backend Developer(Python/Django- Internship)</h6>
+                    
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-1 -->
+<!-- end of about -->
+
+
+<!-- Services -->
+<div id="services" class="basic-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">SERVICES</h2>
+                <p class="p-heading">The data analytics Life Cycle encompasses the process of producing, 
+                    collecting, processing, using, and analyzing data in order to meet corporate objectives.</p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-box">                    
+                    <img style="width:100px; heigth:100px; border-radius:50%;" src="{% static 'images/services/ask3.webp' %}" alt="alternative">
+                    <h4>Ask For Data</h4>
+                    <p>In this phase, We will identify your desired data objectives and how best to attain them through data analytics Life Cycle implementation. Evaluations and 
+                        assessments should also be undertaken during this initial phase to develop a basic hypothesis capable of solving business issues or problems.</p>
+                </div> <!-- end of text-box -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-box">
+                    <img style="width:100px; heigth:100px; border-radius:50%;" src="{% static 'images/services/prepare1.png' %}" alt="alternative">
+                    <h4>Prepare Data</h4>
+                    <p>In this Data preparation phase involves gathering, sorting and purifying 
+                        collected information to make sure it can be utilized by subsequent steps of analysis. An important element of this step is making sure all necessary information is readily accessible before moving ahead with processing it further.</p>
+                </div> <!-- end of text-box -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-box">
+                    <img style="width:100px; heigth:100px; border-radius:50%;" src="{% static 'images/services/process.jpeg' %}" alt="alternative">
+                    <h4>Process Data</h4>
+                    <p>After we’ve defined our business goals and gathered a large amount of data
+                         (formatted, unformatted, or semi-formatted), it’s time to create a model that 
+                         uses the data to achieve the goal. Model planning is the name given to this stage 
+                         of the data analytics process.</p>
+                </div> <!-- end of text-box -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-box">
+                    <img style="width:100px; heigth:100px; border-radius:50%;" src="{% static 'images/services/analyze.png' %}" alt="alternative">
+                    <h4>Analyze Data</h4>
+                    <p>In this phase of the data analytics life cycle involves creating datasets for testing, training, and production. The data analytics 
+                        professionals develop and operate the model they designed in the previous stage with proper effort.</p>
+                </div> <!-- end of text-box -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-box">
+                    <img style="width:100px; heigth:100px; border-radius:50%;" src="{% static 'images/services/share.jpg' %}" alt="alternative">
+                    <h4>Share Insight</h4>
+                    <p>Recall the objective we set for our company in phase 1. 
+                        Now is the time to see if the tests you ran in the previous phase matched those criteria or not. 
+                        Also in this phase we visualize the data and share the insight with the organizations.</p>
+                </div> <!-- end of text-box -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-box">
+                    <img style="width:100px; heigth:100px; border-radius:50%;" src="{% static 'images/services/act.png' %}" alt="alternative">
+                    <h4>Act with Data</h4>
+                    <p>As our data analytics life cycle comes to an end, the final stage is to offer stakeholders a complete report that includes important results, 
+                        coding, briefings, and technical papers or documents.</p>
+                </div> <!-- end of text-box -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of services -->
+
+
+
+<!-- Details -->
+
+
+<!-- Projects -->
+<div id="projects" class="basic-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">Some of the technology i like to worked during my off Time.</h2>
+                <p class="p-heading">Listed below are some of the most representative tools I've worked on. They range from basic web design for presentation sites to advanced web development for online Applications.</p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-container">
+                    <h3>Websocket</h3>
+                    <div class="image-container">
+                        <a href="https://channels.readthedocs.io/en/stable/">
+                        <img class="img-fluid" style="width:1000px" src="{% static 'images/websocket.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p>Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It's built on a Python specification called ASGI</p>
+                </div> <!-- end of text-container -->
+                <div class="text-container">
+                    <h3>Django-Celery</h3>
+                    <div class="image-container">
+                        <a href="https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html">
+                            <img class="img-fluid" style="width:1000px" src="{% static 'images/celery.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p>Django-celery provides Celery integration for Django; Using the Django ORM and cache backend for storing results, autodiscovery of task modules for applications listed in INSTALLED_APPS, and more. 
+                        Celery is a task queue/job queue based on distributed message passing.</p>
+                </div> <!-- end of text-container -->
+                <div class="text-container">
+                    <h3>Authentications and Authorizations</h3>
+                    <div class="image-container">
+                        <a href="https://docs.djangoproject.com/en/4.1/topics/auth/">
+                            <img class="img-fluid" style="width:1000px" src="{% static 'images/jwt.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p>The Django authentication system handles both authentication and authorization. Briefly, authentication verifies a user is who they claim to be, and authorization determines what an authenticated user is allowed to do</p>
+                </div> <!-- end of text-container -->
+                <div class="text-container">
+                    <h3>Django ORM</h3>
+                    <div class="image-container">
+                        <a href="https://docs.djangoproject.com/en/4.1/topics/db/queries/">
+                            <img class="img-fluid" style="width:1000px" src="{% static 'images/orm.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p>ORM stands for Object Relational Mapper. The main goal of ORM is to send data between a database and models in an application. It maps a relation between the database and a model</p>
+                </div> <!-- end of text-container -->
+                <div class="text-container">
+                    <h3>Django Rest Framework</h3>
+                    <div class="image-container">
+                        <a href="https://www.django-rest-framework.org/">
+                            <img class="img-fluid" style="width:1000px" src="{% static 'images/rest.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p>Django REST framework i a powerfull and flexible toolkit for building Web APIs.</p>
+                </div> <!-- end of text-container -->
+                <div class="text-container">
+                    <h3>Django Social-media Login</h3>
+                    <div class="image-container">
+                        <a href="project.html">
+                            <img class="img-fluid" style="width:1000px" src="{% static 'images/social_login.jpg' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p>Django support several other services and the process should be somewhat similar. The social-auth-app-django library have several customization options, which sometimes makes 
+                        it challenging to get started. So for this tutorial I will guide you through the mandatory steps where in the end you will have a fully functional social authentication.</p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-3 -->
+<!-- end of projects -->
+
+
+<!-- Works -->
+<div class="basic-4">
+    <div class="container">
+        <h2 class="h2-heading">My favorite tools to Refresh myself.</h2>
+        <div class="row">
+            
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://www.python.org/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/python.ico' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>Python</strong>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. 
+                        Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for 
+                        Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. 
+                        <a class="blue" href="https://www.python.org/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://www.djangoproject.com/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/django.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>Django</strong> Django is a high-level Python web framework that encourages rapid development and clean, 
+                        pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you 
+                        can focus on writing your app without needing to reinvent the wheel. It's free and open source.<a class="blue" href="https://www.djangoproject.com/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://www.javascript.com/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/js.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>JavaScript</strong>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most 
+                        well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat <a class="blue" href="https://www.javascript.com/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://html.com/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/html.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>HTML</strong>
+                        HTML stands for Hyper Text Markup Language
+                        HTML is the standard markup language for creating Web pages
+                        HTML describes the structure of a Web page
+                        HTML consists of a series of elements
+                        HTML elements tell the browser how to display the content
+                        HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+                    <a class="blue" href="https://html.com/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://en.wikipedia.org/wiki/CSS">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/css.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>CSS</strong>
+                        CSS stands for Cascading Style Sheets
+                        CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                        CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                        External stylesheets are stored in CSS files
+                    <a class="blue" href="https://en.wikipedia.org/wiki/CSS">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://htmx.org/docs/#introduction">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/htmx.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>HTMX</strong>Htmx is a library that allows you to access modern browser features directly from HTML, rather than using javascript. <a class="blue" href="https://htmx.org/docs/#introduction">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://www.docker.com/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/docker.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>Docker</strong>Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your 
+                        infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker's 
+                        methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production. <a class="blue" href="https://www.docker.com/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://jquery.com/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/ajax.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>Ajax</strong> jQuery Ajax
+                        jQuery ajax() method. AJAX is an acronym for Asynchronous JavaScript and XML. It is a group of inter-related technologies like JavaScript, DOM, XML, HTML/XHTML, CSS, XMLHttpRequest etc. 
+                        It allows us to send and receive data asynchronously without reloading the web page. So it is fast. <a class="blue" href="https://jquery.com/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://www.mysql.com/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/mysql.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>MySql</strong> MySQL is one of the most recognizable technologies in the modern big data ecosystem. Often called the most popular database and
+                         currently enjoying widespread, effective use regardless of industry, it's clear that anyone involved with enterprise data or general IT should at 
+                         least aim for a basic familiarity of MySQL.<a class="blue" href="https://www.mysql.com/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://getbootstrap.com/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/bootstrap.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>Bootstrap</strong> Bootstrap is a free and open-source web development framework. 
+                        It's designed to ease the web development process of responsive, mobile-first websites by providing a collection of syntax for template designs.
+                        In other words, Bootstrap helps web developers build websites faster as they don't need to worry about basic commands and functions. 
+                        It consists of HTML, CSS, and JS-based scripts for various web design-related functions and components.<a class="blue" href="https://getbootstrap.com/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href="https://ai.google/">
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/ai.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>AI</strong> Artificial intelligence (AI) is a wide-ranging branch of computer science concerned with building smart 
+                        machines capable of performing tasks that typically require human intelligence. AI is an interdisciplinary science with multiple 
+                        approaches, but advancements in machine learning and deep learning are creating a paradigm shift in virtually every sector of the tech industry. <a class="blue" href="https://ai.google/">details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">.
+                <div class="text-container">
+                    <div class="image-container">
+                        <a href=https://www.adobe.com/products/photoshop.html>
+                            <img class="img-fluid" style="width:100px; heigth:100px;" src="{% static 'images/photo.png' %}" alt="alternative">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <p><strong>Photoshop</strong> Photoshop is an image creation, graphic design and photo editing software developed by Adobe. 
+                        The software provides many image editing features for pixel-based images, raster graphics and vector graphics.
+                        Adobe Photoshop was first released in 1988. Created by Thomas and John Knoll, it was initially developed for Macintosh 
+                        computers but is now available for Windows and macOS platforms.<a class="blue" href=https://www.adobe.com/products/photoshop.html>details</a></p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-4 -->
+<!-- end of works -->
+
+
+
+<!-- Contact -->
+<div id="contact" class="form-1 bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contact details</h2>
+                <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#dk381759@gmail.com">dk381759@gmail.com</a></p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                
+                <!-- Contact Form  id="contactForm"-->
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="name" name="name" required>
+                        <label class="label-control" for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="email" name="email" required>
+                        <label class="label-control" for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control-textarea" id="message" name="message" required></textarea>
+                        <label class="label-control" for="message">Your Messages here</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">Submit</button>
+                    </div>
+                </form>
+                <!-- end of contact form -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-1 -->  
+<!-- end of contact -->
+
+{% endblock content %}
