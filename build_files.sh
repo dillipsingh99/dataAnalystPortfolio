@@ -1,9 +1,8 @@
-echo "Building the project..."
-python3.9 -m pip3 install -r requirements.txt
+echo "BUILD START"
 
-echo "Make Migration..."
-python3.9 manage.py makemigrations --noinput
-python3.9 manage.py migrate --noinput
+# source \dapvenv\Scripts\activate
 
-echo "Collect Static..."
-python3.9 manage.py collectstatic --noinput --clear
+pip3 install --root-user-action=ignore
+pip3 install -r requirements.txt
+python3.9 manage.py collectstatic --noinput
+echo "BUILD END"
