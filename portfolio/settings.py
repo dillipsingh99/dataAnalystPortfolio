@@ -9,15 +9,23 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = 'django-insecure-@)&*b3(8-xn^xsx4!_4&d_)9d8=0rtct1z#!e(mkoq@f4#gakb'
+=======
+SECRET_KEY = 'django-insecure-0%3xugk@9dhgx*z@@@f#$7ie_o--bexrg$ylo%49()tygfq=9t'
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['127.0.0.1','.vercel.app', '.now.sh']
 
 
 
+=======
+ALLOWED_HOSTS = ['vercel.app', '.now.sh', '127.0.0.1', 'localhost']
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
 
 
 # Application definition
@@ -29,10 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'users',
     'blog',
     'ckeditor_uploader',
     'ckeditor',
+=======
+    'users'
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
 ]
 
 MIDDLEWARE = [
@@ -69,6 +81,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+<<<<<<< HEAD
 
 DATABASE = {}
 # DATABASES = {
@@ -78,6 +91,15 @@ DATABASE = {}
 #     }
 # }
 
+=======
+DATABASES = { 
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+DATABASES['default'] = dj_database_url.config()
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -115,16 +137,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
 STATIC_URL = '/static/'
 STATICFILES_DIRS= [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+<<<<<<< HEAD
 
 AUTH_USER_MODEL = 'users.Users'
 
@@ -153,3 +182,5 @@ CKEDITOR_CONFIGS = {
   },
 }
 ###################################
+=======
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import render, redirect
 from .forms import UserAuthenticationForm, RegistrationForm
 from django.contrib.auth import authenticate, login, logout
@@ -63,3 +64,9 @@ def register_view(request, *args, **kwargs):
         form = RegistrationForm()
         context['registration_form'] = form
     return render(request, 'registrations/register.html', context)
+=======
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'index.html')
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3

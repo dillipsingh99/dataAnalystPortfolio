@@ -1,10 +1,21 @@
 {
+<<<<<<< HEAD
   "version": 2,
+=======
+  "version" : 2,
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
   "builds": [
     {
       "src": "portfolio/wsgi.py",
       "use": "@vercel/python",
+<<<<<<< HEAD
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+=======
+      "config": { 
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9" 
+      }
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
     },
     {
       "src": "build_files.sh",
@@ -24,4 +35,11 @@
       "dest": "portfolio/wsgi.py"
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+>>>>>>> 1a729ec33828544cc42c545173254032db3c72c3
